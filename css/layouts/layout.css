@@ -71,4 +71,10 @@
     .sidebar-m-header > h2 {
       display: none;
     }
+
+    .chat-cards {
+      width: 95%;
+      height: calc(100vh - 350px);
+      overflow-y: scroll;
+    }
 }
