@@ -1,0 +1,95 @@
+/* left */
+
+.sidebar-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+}
+
+.organization {
+  opacity: .3;
+  cursor: pointer;
+  width: 48px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.organization a {
+  text-decoration: none;
+  color: white;
+}
+
+.organization:hover {
+  opacity: 1;
+}
+
+.active {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  
+}
+
+/* middle */
+
+.sidebar-m-flex {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+  color: white;
+}
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.online-status {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #1FE5BD;
+  margin-top: 2px;
+  margin-right: 8px;
+}
+
+.channels-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.padding-left-8 {
+  padding-left: 8px;
+}
+
+.channel {
+  opacity: 0.3;
+}
+
+.channels {
+  margin-right: 8px;
+}
+
+.active-channel {
+  opacity: 1;
+}
+
+
+.offline {
+  background-color: #AAA2A9;
+}
+
+.user {
+  opacity: 0.3;
+}
+
+.channels-container {
+  display: flex;
+  flex-direction: column;
+}

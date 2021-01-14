@@ -1,0 +1,42 @@
+.chat-container {
+  padding: 8px 16px;
+  /* margin-left: 8px; */
+}
+
+.chat-header {
+  border-bottom: 1px solid #dee2e6
+}
+
+.chat-cards {
+  width: 90%;
+}
+
+.chat-card {
+  display: flex;
+  margin-bottom: 4px;
+}
+
+.chat-card a {
+  color: #007bff;
+}
+
+.chat-card > img {
+  height: 40px;
+  border-radius: 4px;
+}
+
+.chat-card a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.chat-content {
+  margin-left: 16px;
+}
+
+.code {
+  font-size: 87.5%;
+  color: #e83e8c;
+  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+
+}

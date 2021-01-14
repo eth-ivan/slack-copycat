@@ -1,0 +1,80 @@
+/* TODO: slack layout */
+.grid-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: minmax(100px, 100px) minmax(200px, 200px) 1fr;
+  grid-template-rows: 3.75fr 0.25fr;
+  grid-template-areas: 
+    "sidebar-l sidebar-m main"
+    "sidebar-l sidebar-m footer"
+}
+
+#sidebar-l {
+  grid-area: sidebar-l;
+  background-color: #261C25;
+}
+
+#sidebar-m {
+  grid-area: sidebar-m;
+  background-color: #4B3949;
+}
+
+#title {
+  grid-area: titre;
+}
+
+#main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+
+@media only screen and (max-width: 550px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 0.6fr 2.4fr 0.25fr;
+    grid-template-areas:
+      "sidebar-l"
+      "sidebar-m"
+      "main"
+      "footer"
+  }
+
+  .sidebar-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+
+    .channels-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    .channels {
+      width: 130px;
+      margin-right: 64px;
+      margin-bottom: 16px;
+      position: relative;
+      margin-left: 8px;
+    }
+
+    .big {
+      width: 170px;
+    }
+
+    .sidebar-m-header {
+      position: absolute;
+      width: 25%;
+      top: 15px;
+      right: 8px;
+    }
+
+    .sidebar-m-header > h2 {
+      display: none;
+    }
+}
