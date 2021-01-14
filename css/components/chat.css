@@ -1,15 +1,17 @@
 .chat-container {
   padding: 8px 16px;
-  /* margin-left: 8px; */
-  position: relative;
 }
 
 .chat-header {
-  border-bottom: 1px solid #dee2e6
+  border-bottom: 1px solid #dee2e6;
+  position: sticky;
+  top: 0;
 }
 
 .chat-cards {
-  width: 90%;
+  width: 95%;
+  height: calc(100vh - 135px);
+  overflow-y: scroll;
 }
 
 .chat-card {
@@ -43,7 +45,5 @@
 }
 
 footer {
-  position: sticky;
-  bottom: 0;
-  padding: 8px;
+  width: 95%;
 }
