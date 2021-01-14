@@ -3,10 +3,9 @@
   display: grid;
   height: 100vh;
   grid-template-columns: minmax(100px, 100px) minmax(200px, 200px) 1fr;
-  grid-template-rows: 3.75fr 0.25fr;
+  grid-template-rows: 1fr;
   grid-template-areas: 
     "sidebar-l sidebar-m main"
-    "sidebar-l sidebar-m footer"
 }
 
 #sidebar-l {
@@ -25,22 +24,19 @@
 
 #main {
   grid-area: main;
-}
-
-footer {
-  grid-area: footer;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 
 @media only screen and (max-width: 550px) {
   .grid-container {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.25fr 0.6fr 2.4fr 0.25fr;
+    grid-template-rows: 0.25fr 0.5fr 3.25fr;
     grid-template-areas:
       "sidebar-l"
       "sidebar-m"
       "main"
-      "footer"
   }
 
   .sidebar-flex {

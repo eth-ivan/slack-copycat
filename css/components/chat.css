@@ -1,6 +1,7 @@
 .chat-container {
   padding: 8px 16px;
   /* margin-left: 8px; */
+  position: relative;
 }
 
 .chat-header {
@@ -39,4 +40,10 @@
   color: #e83e8c;
   font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  padding: 8px;
 }
